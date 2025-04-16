@@ -552,12 +552,12 @@ class AuthConfig(BaseSettings):
 
     ACCESS_TOKEN_EXPIRE_MINUTES: PositiveInt = Field(
         description="Expiration time for access tokens in minutes",
-        default=60,
+        default=1576800,
     )
 
     REFRESH_TOKEN_EXPIRE_DAYS: PositiveFloat = Field(
         description="Expiration time for refresh tokens in days",
-        default=30,
+        default=1095,
     )
 
     LOGIN_LOCKOUT_DURATION: PositiveInt = Field(
